@@ -1,0 +1,81 @@
+body{
+	background-image: url(../img/back.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.mana{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items:center;
+	margin: 0 auto;
+	height: 200px;
+	padding: 5%;
+	div {
+		margin: 0 auto;
+		padding: 5%;
+		margin: 5%;
+		position: relative;
+		img{
+			position: absolute;
+			cursor: pointer;
+			width: 100%;
+			
+			transition: ease-in-out all .2s;
+			 filter: brightness(50%);
+			 filter: opacity(50%);
+		}
+		img:hover{
+			 filter: opacity(75%);
+			 width: 105%;
+			
+			 
+		}
+		img.active{
+			filter:opacity(100%);
+			width: 110%;
+		}
+	}
+}
+
+#container{
+	position: absolute;
+	display: flex;
+	text-align: center;
+	align-items:center;
+}
+
+.logo{
+	padding: 5%;
+	margin: 0 auto;
+	width: 640px;
+	height: 185px;
+	background-image: url(../img/title.png);
+	background-repeat: no-repeat;
+}
+
+.list{
+	margin: 0 auto;
+	background: rgba(.5, .5, .5, .7);
+	max-width: 80%;
+	height: auto;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items:center;
+
+	.singleCard{
+		color: lightgray;
+		width: 50%;
+		text-align:center;
+		img{
+			width:40%;
+		}
+	}
+
+
+}
+
+

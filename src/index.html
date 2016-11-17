@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Magic</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="loader">
+		<div class="spinner">
+		</div>
+	</div>
+
+	<div class="logo"></div>
+
+	<div class="mana">
+		<div> <img data-color="white," class="change active" src="img/mana_white.png" alt=""></div>
+		<div> <img data-color="blue," class="change" src="img/mana_blue.png" alt=""></div>
+		<div> <img data-color="black," class="change" src="img/mana_black.png" alt=""></div>
+		<div> <img data-color="red," class="change" src="img/mana_red.png" alt=""></div>
+		<div> <img data-color="green," class="change" src="img/mana_green.png" alt=""></div>
+	</div>	
+
+	<div id="container">
+
+	</div>
+
+	<section>
+
+		<script id="cards-template" type="x-handlebars-template">
+
+			<div class="list">
+
+				{{#each cards}}
+
+				<div class="singleCard">
+					<h2> {{name}} </h2>
+					<br>  
+					<span>Type: {{type}} </span>
+					<br>
+					<img src= {{imageUrl}}>
+					
+					<br>
+					<span> {{rarity}} </span>
+				</div>
+
+				{{/each}}
+
+			</div>
+
+		</script>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js">
+	</script>
+
+	<script src="js/main.min.js">
+	</script>
+
+
+</body>
+</html>
+
+
